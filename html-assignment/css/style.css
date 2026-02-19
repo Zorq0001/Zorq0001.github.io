@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px;
+}
+h1, p:last-of-type { 
+  background-color: purple;
+  color: gold;
+  text-align: center;
+  padding: 10px;
+}
+h1.site-title {
+  color: blue;
+  margin: 0;
+}
+#my-image {
+  display: block;
+  max-width: 300px;
+  margin: 10px auto;
+  box-shadow: 0 0 2px 1px rgb(214, 9, 9);
+  border: 7px solid black;         /* black tracing / border */
+}
+ul {
+  list-style-type: square; /* bullets as squares */
+  padding-left: 20px;
+}
+ul li:nth-child(odd) {
+  background-color: lightgray; /* odd items background */
+  padding: 5px;
+}
+p:first-of-type {
+  text-align: center;
+}
+p:first-of-type a {
+  text-decoration: none;       /* remove underline */
+  background-color: green;     /* background for links */
+  color: white;
+  border: 1px solid yellow;    /* border around links */
+  padding: 5px 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+p:first-of-type a:hover,
+p:first-of-type a:focus {
+  background-color: blue;      /* hover/focus background */
+  color: orange;               /* hover/focus text */
+}
