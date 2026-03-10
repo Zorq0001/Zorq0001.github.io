@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zorq0001 Midterm</title>
+    <title>Lone Starfish</title>
+    <!-- Link to the CSS file in the css folder -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+
+    <!-- Main Container: Centers everything on the screen -->
+    <div id="container">
+
+        <!-- HEADER SECTION -->
+        <header>
+            <div class="banner">
+                <!-- RUBRIC: Image tag used for header -->
+                <img src="images/lone-starfish-wide.jpg" alt="Starfish Header" class="banner-img">
+                
+                <!-- RUBRIC: Heading on top of image -->
+                <h1 class="site-title">Lone Starfish</h1>
+            </div>
+            
+            <!-- NAVIGATION MENU -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">STORY</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ARTICLE SECTION -->
+            <article class="content-area">
+                <h2>Life of a Starfish</h2>
+                
+                <!-- RUBRIC: Image with text wrapping around it -->
+                <img src="images/lone-starfish.jpg" alt="Single Starfish" class="starfish-img">
+                
+                <p>
+                    Swallower cat black angelfish grunter striped bass scissor-tail rasbora; slender mola. 
+                    Snapper catalufa silver driftfish, kaluga lungfish boga greeneye. French angelfish peamouth 
+                    halfbeak batfish Australian prowfish mouthbrooder.
+                </p>
+                <p>
+                    Gibberfish tui chub mooneye smooth-tongue; amur pike barbeled houndshark dwarf loach 
+                    beachsalmon archerfish longfin fingerfish. Starfish are not actually fish; they are 
+                    echinoderms, related to sea urchins.
+                </p>
+                <p>
+                    Gibberfish tui chub mooneye smooth-tongue; amur pike barbeled houndshark dwarf loach 
+                    beachsalmon archerfish longfin fingerfish. Starfish are not actually fish; they are 
+                    echinoderms, related to sea urchins.
+                </p>
+                <p>
+                    Gibberfish tui chub mooneye smooth-tongue; amur pike barbeled houndshark dwarf loach 
+                    beachsalmon archerfish longfin fingerfish. Starfish are not actually fish; they are 
+                    echinoderms, related to sea urchins.
+                </p>
+            </article>
+
+            <!-- FACTS SECTION -->
+            <section class="facts-area">
+                <h3>Facts About Starfish</h3>
+                <!-- RUBRIC: Proper syntax for listing facts (Unordered List) -->
+                <ul>
+                    <li>Australian herring barbel Mexican golden trout.</li>
+                    <li>Waryfish, lionfish; longfin smelt; leopard danio dragonfish.</li>
+                    <li>Herring barbel Mexican golden trout; killifish bonito.</li>
+                    <li>Waryfish, lionfish; longfin smelt; leopard danio dragonfish.</li>
+                </ul>
+            </section>
+
+            <!-- CONTACT FORM -->
+            <section class="contact-area">
+                <h3>Contact to learn more</h3>
+                <form action="#" method="post">
+                    
+                    <!-- RUBRIC: Input linked to label using 'for' and 'id' -->
+                    <p>
+                        <label for="fullname">Your Name</label>
+                        <input type="text" id="fullname" name="fullname" class="full-width">
+                    </p>
+
+                    <p>
+                        <label for="emailadd">Your Email</label>
+                        <input type="text" id="emailadd" name="emailadd" class="full-width">
+                    </p>
+
+                    <p>
+                        <label for="msg">Your Message</label>
+                        <textarea id="msg" name="msg" rows="5" class="full-width"></textarea>
+                    </p>
+
+                    <p>
+                        <label>Would you like to visit the starfish?</label>
+                        <br>
+                        <!-- Radio buttons share the same 'name' to make them a group -->
+                        <input type="radio" id="yes" name="visit" value="yes">
+                        <label for="yes" class="inline-label">Yes</label>
+
+                        <input type="radio" id="no" name="visit" value="no">
+                        <label for="no" class="inline-label">No</label>
+
+                        <input type="radio" id="maybe" name="visit" value="maybe">
+                        <label for="maybe" class="inline-label">Maybe</label>
+                    </p>
+
+                    <button type="submit" class="blue-btn">Submit</button>
+                    <button type="button">Cancel</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Lone Starfish</p>
+        </footer>
+
+    </div>
 </body>
 </html>

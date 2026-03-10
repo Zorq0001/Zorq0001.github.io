@@ -1,0 +1,126 @@
+/* Page Style */
+body {
+    margin: 0;/* Remove default white space */
+    background-color: #a8e5ec; /* Dark background outside the container */
+    font-family: Arial, sans-serif; /* Standard beginner font */
+}
+
+/* The Main Box */
+#container {
+    width: 100%; /* Fixed width as seen in mockup */
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the container */
+    background-color: #A8D0D6; /* Background Color */
+    border-left: 15px solid #fafcfc; /* The dark stripe on the left */
+}
+
+/* Header Section */
+
+/* Header Style */
+.banner {
+    position: relative; /* This makes the banner the anchor for the text */
+    height: 300px;
+    overflow: hidden; /* Chops off any image parts that stick out */
+}
+
+.banner-img {
+    width: 100%; /* stretches image to fit container */
+    float: left;
+    margin-right:  15px;
+    margin-bottom: 10px;
+}
+
+.site-title {
+    position: absolute; /* Sits on top of the image */
+    bottom: 0px;        /* Sticks to the bottom of the banner */
+    width: 100%;        /* Spans the full width */
+    text-align: center; /* Centers the text */
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px; /* Lifts it up slightly */
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff; /* White Bar */
+    text-align: center; /* Centers the links */
+    padding: 15px;
+}
+
+nav li {
+    display: inline; /* Makes list items sit side by side */
+    margin: 0 20px;  /* Adds space between links */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: black;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 40px; /* Internal Spacing */
+}
+
+h2, h3 {
+    color: #2C3E50;
+}
+
+/* Article and Text wrapping around image */
+.content-area {
+    overflow: hidden; /* Fixes layout issues */
+    margin-bottom: 30px;
+}
+
+.starfish-img {
+    float: left; /* This forces text to wrap around the right */
+    margin-right: 20px; /* Space between image and text */
+    border: 5px solid #7AAEB6; /* Decorative border */
+    width: 200px;
+}
+
+/* Facts List */
+.facts-area ul {
+    list-style-type: disc; /* Standard bullet points */
+    margin-left: 20px;
+}
+
+/* Contact Area */
+.contact-area {
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Message Box */
+.full-width {
+    width: 100%; /* Makes input fill the container */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Radio Button */
+.inline-label {
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+/* Button */
+.blue-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
