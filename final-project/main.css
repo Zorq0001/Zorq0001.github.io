@@ -1,0 +1,291 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* header */
+header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+}
+
+.logo img {
+    width: 80px;
+}
+
+/* nav */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+nav a {
+    color: #f5c242;
+}
+
+nav a:hover {
+    background: #f5c242;
+    color: #222;
+}
+
+/* search */
+header form {
+    display: flex;
+}
+
+header input {
+    flex: 1;
+    padding: 5px;
+}
+
+header button {
+    background: #f5c242;
+    border: none;
+    padding: 5px 10px;
+}
+
+/* hero */
+#home {
+    background: url("images/main-banner.jpg") center/cover no-repeat;
+    color: white;
+    padding: 4rem 0;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+#home .container {
+    position: relative;
+}
+
+#home h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#home a {
+    display: inline-block;
+    background: #f5c242;
+    color: #222;
+    padding: 10px 15px;
+    margin-top: 1rem;
+}
+
+/* about */
+#about {
+    background: #f5e1a4;
+    padding: 2rem 0;
+}
+
+/* services */
+#services {
+    background: #eee;
+    padding: 2rem 0;
+}
+
+.service-card {
+    background: #f5e1a4;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.service-card h3,
+.service-card p {
+    padding: 0.5rem 1rem;
+}
+
+.service-card button {
+    margin: 1rem;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+}
+
+/* vision */
+.vision {
+    background: url("images/vision.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.vision h2 {
+    margin-bottom: 1rem;
+}
+
+.vision p {
+    max-width: 600px;
+    margin: auto;
+}
+
+.vision button {
+    margin-top: 1rem;
+    background: #0b3d5c;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* team */
+#team {
+    padding: 2rem 0;
+}
+
+#team article {
+    background: #f5e1a4;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* contact */
+#contact {
+    padding: 2rem 0;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form-container button {
+    background: #f5c242;
+    border: none;
+    padding: 8px;
+}
+
+/* map */
+.map-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    background: #222;
+    color: #f5c242;
+    padding: 1rem 0;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #services h2 {
+        grid-column: 1 / -1;
+    }
+
+    .contact-form-container {
+        flex-direction: row;
+    }
+
+    #team {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #team article:nth-child(1) {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #team article:nth-child(2) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #team img {
+        width: 40%;
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
